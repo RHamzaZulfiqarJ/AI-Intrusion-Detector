@@ -37,6 +37,15 @@ def main():
         .iloc[0]
         .to_dict()
     )
+    
+    import json
+
+    print(
+        json.dumps(
+            sample,
+            indent=4,
+        )
+    )
 
     # -----------------------------
     # Load inference components
