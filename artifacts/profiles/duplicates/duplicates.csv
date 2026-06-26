@@ -1,0 +1,12 @@
+Class,Duplicate Count,Percentage
+BENIGN,176613,57.271
+PortScan,68111,22.0866
+DoS Hulk,58224,18.8805
+SSH-Patator,2678,0.8684
+FTP-Patator,2005,0.6502
+DoS slowloris,411,0.1333
+DoS Slowhttptest,271,0.0879
+Web Attack � Brute Force,37,0.012
+Bot,13,0.0042
+DDoS,11,0.0036
+DoS GoldenEye,7,0.0023

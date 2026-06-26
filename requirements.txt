@@ -21,3 +21,5 @@ langchain-community
 sentence-transformers
 transformers
 accelerate
+google-genai>=1.28.0
+python-dotenv>=1.0.1

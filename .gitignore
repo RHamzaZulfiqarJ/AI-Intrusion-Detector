@@ -29,6 +29,7 @@ mlruns/
 models/*.pth
 models/*.pt
 models/*.ckpt
+training/checkpoints/*.pth
 
 # Data
 data/raw/
@@ -48,3 +49,6 @@ Thumbs.db
 .coverage
 htmlcov/
 .pytest_cache/
+__pycache__/
+*.py[cod]
+notebooks/data

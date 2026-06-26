@@ -1,0 +1,46 @@
+{
+    "BENIGN": {
+        "Duplicate Count": 176613,
+        "Percentage": 57.271
+    },
+    "PortScan": {
+        "Duplicate Count": 68111,
+        "Percentage": 22.0866
+    },
+    "DoS Hulk": {
+        "Duplicate Count": 58224,
+        "Percentage": 18.8805
+    },
+    "SSH-Patator": {
+        "Duplicate Count": 2678,
+        "Percentage": 0.8684
+    },
+    "FTP-Patator": {
+        "Duplicate Count": 2005,
+        "Percentage": 0.6502
+    },
+    "DoS slowloris": {
+        "Duplicate Count": 411,
+        "Percentage": 0.1333
+    },
+    "DoS Slowhttptest": {
+        "Duplicate Count": 271,
+        "Percentage": 0.0879
+    },
+    "Web Attack � Brute Force": {
+        "Duplicate Count": 37,
+        "Percentage": 0.012
+    },
+    "Bot": {
+        "Duplicate Count": 13,
+        "Percentage": 0.0042
+    },
+    "DDoS": {
+        "Duplicate Count": 11,
+        "Percentage": 0.0036
+    },
+    "DoS GoldenEye": {
+        "Duplicate Count": 7,
+        "Percentage": 0.0023
+    }
+}
