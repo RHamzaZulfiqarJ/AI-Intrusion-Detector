@@ -10,8 +10,6 @@ from src.preprocessing.loader import DatasetLoader
 
 from src.preprocessing.scaler import DatasetScaler
 
-from src.training.model import IntrusionDetectionModel
-
 
 def main():
 
@@ -59,11 +57,10 @@ def main():
 
     encoder.load()
 
-    model = IntrusionDetectionModel()
+    from src.mlops.model_loader import ModelLoader
 
-    model.load_weights(
-        "training/checkpoints/best_model.pth"
-    )
+    model = ModelLoader.load()
+    model.eval()
 
     engine = ExplanationEngine()
 

@@ -12,7 +12,6 @@ from src.training.model import IntrusionDetectionModel
 from src.training.trainer import Trainer
 from src.utils.logger import logger
 
-
 def main():
 
     logger.info("=" * 80)
@@ -50,6 +49,7 @@ def main():
     splitter = DatasetSplitter(dataframe)
 
     train_df, validation_df, test_df = splitter.split()
+
 
     # ------------------------------------------------------------------
     # Scale Features
@@ -112,6 +112,9 @@ def main():
         validation_loader=validation_loader,
         learning_rate=1e-3,
         epochs=20,
+        train_df=train_df,
+        validation_df=validation_df,
+        test_df=test_df,
     )
 
     history = trainer.train()

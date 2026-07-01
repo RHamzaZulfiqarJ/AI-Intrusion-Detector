@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Git
+.git/
+.gitignore
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# Notebooks
+*.ipynb
+
+# Tests
+.pytest_cache/
+
+# MLflow
+mlflow.db
+mlartifacts/
+
+# Models
+training/checkpoints/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

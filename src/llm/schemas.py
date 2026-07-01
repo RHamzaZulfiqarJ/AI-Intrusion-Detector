@@ -79,11 +79,13 @@ class SecurityReport:
 @dataclass(slots=True)
 class MitreTechnique:
 
-    id: str
+    technique_id: str = ""
 
-    name: str
+    technique_name: str = ""
 
-    url: str
+    tactic: str = ""
+
+    url: str = ""
 
 @dataclass(slots=True)
 class Indicator:

@@ -7,8 +7,6 @@ from src.llm.explanation_engine import ExplanationEngine
 from src.preprocessing.encoder import DatasetEncoder
 from src.preprocessing.scaler import DatasetScaler
 
-from src.training.model import IntrusionDetectionModel
-
 from src.utils.logger import logger
 
 
@@ -44,11 +42,10 @@ class BackendInferenceService:
         # Load trained model
         # -----------------------------
 
-        model = IntrusionDetectionModel()
+        from src.mlops.model_loader import ModelLoader
 
-        model.load_weights(
-            "training/checkpoints/best_model.pth"
-        )
+        model = ModelLoader.load()
+        model.eval()
 
         # -----------------------------
         # Load explanation engine

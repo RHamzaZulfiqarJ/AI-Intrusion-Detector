@@ -24,3 +24,5 @@ uvicorn
 pydantic
 pydantic-settings
 python-dotenv
+mlflow>=2.14.0
+psutil>=6.0.0

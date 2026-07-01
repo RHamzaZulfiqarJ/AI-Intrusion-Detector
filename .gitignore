@@ -52,3 +52,9 @@ htmlcov/
 __pycache__/
 *.py[cod]
 notebooks/data
+
+# MLflow
+mlruns/
+mlartifacts/
+*.db
+mlflow.db

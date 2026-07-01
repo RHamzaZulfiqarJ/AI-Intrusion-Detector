@@ -19,6 +19,9 @@ class IntrusionDetectionModel(nn.Module):
     ):
         super().__init__()
 
+        self.input_dim: int = input_dim
+        self.num_classes: int = num_classes
+
         self.network = nn.Sequential(
 
             nn.Linear(input_dim, 256),

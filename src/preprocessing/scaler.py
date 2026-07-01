@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
@@ -12,6 +13,7 @@ class DatasetScaler:
     def __init__(
         self,
         label_column: str = "Label",
+        clip_range: float | None = 10.0,
     ):
 
         self.label_column = label_column
@@ -19,6 +21,11 @@ class DatasetScaler:
         self.scaler = StandardScaler()
 
         self.artifacts = ArtifactManager()
+
+        # Clip scaled values to prevent extreme OOD inputs from collapsing the
+        # model. Flag features trained on imbalanced data (e.g. SYN Flag Count)
+        # can have near-zero std, causing inference values to blow up to 45 000+.
+        self.clip_range = clip_range
         
     def load(self):
 
@@ -90,6 +97,9 @@ class DatasetScaler:
             labels = None
 
         scaled = self.scaler.transform(features)
+
+        if self.clip_range is not None:
+            scaled = np.clip(scaled, -self.clip_range, self.clip_range)
 
         scaled_df = pd.DataFrame(
             scaled,
