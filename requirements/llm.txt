@@ -1,0 +1,4 @@
+langchain
+langchain-community
+google-genai>=1.28.0
+faiss-cpu

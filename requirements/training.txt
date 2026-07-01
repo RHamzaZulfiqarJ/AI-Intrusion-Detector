@@ -1,0 +1,12 @@
+-r base.txt
+
+torch
+torchvision
+torchaudio
+
+matplotlib
+seaborn
+
+transformers
+accelerate
+sentence-transformers

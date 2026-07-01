@@ -1,0 +1,12 @@
+-r backend.txt
+
+numpy
+pandas
+scikit-learn
+fastapi
+uvicorn
+mlflow==3.14.0
+faiss-cpu
+sentence-transformers
+transformers
+accelerate

@@ -23,9 +23,9 @@ env/
 # Tests
 .pytest_cache/
 
-# MLflow
-mlflow.db
-mlartifacts/
+# # MLflow
+# mlflow.db
+# mlartifacts/
 
 # Models
 training/checkpoints/

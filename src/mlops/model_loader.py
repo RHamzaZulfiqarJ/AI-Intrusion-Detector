@@ -17,4 +17,5 @@ class ModelLoader:
 
         model_uri = f"models:/{REGISTERED_MODEL_NAME}@{alias}"
 
-        return mlflow.pytorch.load_model(model_uri)
+        import torch
+        return mlflow.pytorch.load_model(model_uri, map_location=torch.device("cpu"))

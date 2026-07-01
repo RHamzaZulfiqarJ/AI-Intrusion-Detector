@@ -1,0 +1,8 @@
+-r base.txt
+
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+python-multipart
+mlflow==3.14.0

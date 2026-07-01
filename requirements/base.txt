@@ -1,0 +1,9 @@
+numpy
+pandas
+scikit-learn
+joblib
+pyyaml
+tqdm
+requests
+psutil>=6.0.0
+python-dotenv
