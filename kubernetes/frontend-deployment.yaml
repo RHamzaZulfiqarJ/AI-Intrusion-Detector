@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: intrusion-frontend
+  namespace: intrusion-detector
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: intrusion-frontend
+
+  template:
+    metadata:
+      labels:
+        app: intrusion-frontend
+
+    spec:
+      containers:
+        - name: intrusion-frontend
+          image: intrusion-frontend:v1
+          imagePullPolicy: IfNotPresent
+
+          ports:
+            - containerPort: 3000
