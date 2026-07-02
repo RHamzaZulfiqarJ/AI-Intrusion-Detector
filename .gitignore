@@ -38,6 +38,9 @@ data/processed/
 # Environment
 .env
 
+kubernetes/secret.yaml
+Document/*
+
 # OS
 .DS_Store
 Thumbs.db
