@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: intrusion-detector
+  namespace: intrusion-detector
+
+spec:
+  replicas: 1
+
+  selector:
+    matchLabels:
+      app: intrusion-detector
+
+  template:
+    metadata:
+      labels:
+        app: intrusion-detector
+
+    spec:
+      containers:
+        - name: intrusion-detector
+
+          image: hamzazulfiqar/intrusion-detector:v1
+
+          imagePullPolicy: IfNotPresent
+
+          ports:
+            - containerPort: 8000
+
+          envFrom:
+            - configMapRef:
+                name: intrusion-config
+
+            - secretRef:
+                name: intrusion-secret
+
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "1Gi"
+
+            limits:
+              cpu: "2"
+              memory: "4Gi"
