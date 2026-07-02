@@ -343,13 +343,12 @@ Implemented Features
 | Name | Student ID |
 |------|------------|
 | Hamza Zulfiqar | F2023376057 |
-| Zafra Noor Ejaz | F2023376056 |
 
 ---
 
 # 📜 License
 
-This project is developed for academic purposes as a Final Year Deep Learning Project.
+This project is developed for academic purposes as a Semester Final Deep Learning Project.
 
 ---
 
