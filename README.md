@@ -338,14 +338,6 @@ Implemented Features
 
 ---
 
-# 👨‍💻 Team Members
-
-| Name | Student ID |
-|------|------------|
-| Hamza Zulfiqar | F2023376057 |
-
----
-
 # 📜 License
 
 This project is developed for academic purposes as a Semester Final Deep Learning Project.
