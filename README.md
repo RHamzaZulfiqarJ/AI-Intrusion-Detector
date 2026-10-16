@@ -181,9 +181,9 @@ Final Project
 ## Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/securegen-ai.git
+git clone https://github.com/RHamzaZulfiqarJ/AI-Intrusion-Detector.git
 
-cd securegen-ai
+cd AI-Intrusion-Detector
 ```
 
 ---
